@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- activity_login.xml -->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LOG IN"
+        android:textStyle="bold"
+        android:textSize="100px"
+        android:layout_marginBottom="250px"
+        android:textColor="#E18484"/>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/app_logo"
+        android:scaleType="centerCrop"
+        android:layout_marginBottom="32dp"/>
+
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="850px"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:layout_marginBottom="16dp"
+        android:padding="12dp"/>
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="850px"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:layout_marginBottom="32dp"
+        android:padding="12dp"/>
+
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="450px"
+        android:layout_height="wrap_content"
+        android:text="Log In"
+        android:textColor="@android:color/white"
+        android:background="#FFFFFF"
+        android:padding="12dp"/>
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60px"
+        android:text="Don't have an account?Then Sign Up"
+        android:textStyle="bold"
+        android:textSize="40px"
+        android:textColor="#C66565"
+        tools:ignore="InvalidId" />
+</LinearLayout>
