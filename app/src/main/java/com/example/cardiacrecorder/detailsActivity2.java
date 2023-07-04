@@ -9,24 +9,17 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
 
 import java.util.Calendar;
 import java.util.Locale;
 
-/**
- * Detailed View for each data in recycleview
- */
+
 public class detailsActivity2 extends AppCompatActivity {
 
     TextView heartrate,systolic,diastolic,comment,date,time;
     String dataUid;
     public  Button editButton;
-    private DatabaseReference databaseReference;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

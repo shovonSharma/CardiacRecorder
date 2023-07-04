@@ -4,46 +4,60 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.Window;
-import android.view.WindowManager;
-import android.widget.ProgressBar;
+import android.os.Handler;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.widget.ImageView;
+import android.widget.TextView;
 
-public class SplashScreen extends AppCompatActivity {
-    private ProgressBar progressBar;
-    private int progress;
+/**
+ * Showing Splash Screen
+ */
+public class MainActivty extends AppCompatActivity {
+
+    private static int SPLASH_SCRN=4000;
+
+    Animation topAnim,bottomAnim;
+
+    ImageView imageView;
+    TextView logo ,slogan;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        setContentView(R.layout.activity_splash_screen);
-        progressBar=(ProgressBar) findViewById(R.id.Progressbar);
-        Thread thread=new Thread(new Runnable() {
+        setContentView(R.layout.activity_main);
+
+        //animation
+        topAnim= AnimationUtils.loadAnimation(this,R.anim.top_animation);
+        bottomAnim= AnimationUtils.loadAnimation(this,R.anim.bottom_animation);
+
+
+        //hocks
+
+        imageView=findViewById(R.id.splashScreenImg);
+        logo=findViewById(R.id.textView2);
+        slogan=findViewById(R.id.textView5);
+
+        imageView.setAnimation(topAnim);
+        logo.setAnimation(bottomAnim);
+        slogan.setAnimation(bottomAnim);
+
+        /**
+         * splash screen dynamic
+         */
+        new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                doWork();
-                startApp();
-            }
-        });
-        thread.start();
-    }
-    public void doWork()
-    {
-        for(progress=20;progress<=100;progress=progress+20)
-        {
-            try {
-                Thread.sleep(1000);
-                progressBar.setProgress(progress);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-        }
 
-    }
-    public void startApp()
-    {
-        Intent intent=new Intent(SplashScreen.this,MainActivity.class);
-        startActivity(intent);
-        finish();
+                Intent intent=new Intent(MainActivty.this,Home.class);
+                startActivity(intent);
+                finish();
+
+            }
+        },SPLASH_SCRN);
+
+
+
+
     }
 }
