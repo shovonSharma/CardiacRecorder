@@ -41,14 +41,14 @@ public class addDataActivity extends AppCompatActivity {
         /**
          * data addition button
          */
-        addButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(addDataActivity.this,"clicked",Toast.LENGTH_SHORT).show();
+         addButton.setOnClickListener(new View.OnClickListener() {
+             @Override
+             public void onClick(View v) {
+                 Toast.makeText(addDataActivity.this,"clicked",Toast.LENGTH_SHORT).show();
 
-                addData();
-            }
-        });
+                 addData();
+             }
+         });
 
 
     }

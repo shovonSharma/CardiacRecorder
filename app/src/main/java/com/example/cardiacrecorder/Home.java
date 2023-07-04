@@ -81,14 +81,14 @@ public class Home extends AppCompatActivity {
      */
 
     private void readComments() {
-        Cursor cursor=new dbmanager(this).readData();
+       Cursor cursor=new dbmanager(this).readData();
 
-        while ( cursor.moveToNext() )
-        {
-            recycle recycle=new recycle(cursor.getInt(0),cursor.getString(1),cursor.getString(2),cursor.getString(3),cursor.getString(4),cursor.getString(5));
-            recycleList.add(recycle);
+       while ( cursor.moveToNext() )
+       {
+           recycle recycle=new recycle(cursor.getInt(0),cursor.getString(1),cursor.getString(2),cursor.getString(3),cursor.getString(4),cursor.getString(5));
+           recycleList.add(recycle);
 
-        }
+       }
 
         /**
          * set in adapter
