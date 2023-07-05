@@ -16,7 +16,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="30dp"
-            android:textColor="#DBE6E8"
+            android:textColor="#FEFFFF"
             android:text="Update Information"
             android:gravity="center"
             android:layout_marginTop="20dp">

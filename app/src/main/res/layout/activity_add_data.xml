@@ -15,7 +15,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="30dp"
-            android:textColor="#8FD2F1"
+            android:textColor="#F8FAFB"
             android:text="Add Information"
             android:gravity="center"
             android:layout_marginTop="20dp">
