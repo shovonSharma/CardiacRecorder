@@ -73,7 +73,7 @@ Contributions are always welcome!
 ## Documentation
 There is an app Documentation.You can check it here
 
-[Documentation](https://exoalam.github.io/com/example/cardiacrecorder/package-summary.html)
+[Documentation](https://github.com/shovonSharma/CardiacRecorder/tree/main/Java%20Doc)
 
 
 ## License
