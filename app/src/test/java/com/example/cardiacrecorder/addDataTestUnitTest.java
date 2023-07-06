@@ -15,7 +15,7 @@ public class addDataTestUnitTest {
     {
         dbmanager dbmanager=new dbmanager(RuntimeEnvironment.application);
         String hr,s,d,c,dt;
-        hr="123";s="60";d="80";
+        hr="120";s="60";d="80";
         c="This is not good";
         dt=""+System.currentTimeMillis();
         long dataid=dbmanager.addData(hr,s,d,c,dt);
