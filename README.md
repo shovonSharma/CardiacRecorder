@@ -6,11 +6,7 @@ patient's status based on heart rate,systolic Pressure and diastolic pressure..
 
 
 ## Authors
-<table>
-  <tr>
-    <td><img src="https://github.com/shovonSharma/CardiacDoctor/blob/main/jessoreswari.jpeg" alt="3" width = 300px height = 300px></td>
-    <td><img src="https://github.com/shovonSharma/CardiacDoctor/blob/main/nakib.png" alt="2" width = 300px height = 300px></td>
-   </tr> 
+<table> 
    <tr>
       <td><h3 align='center'>Shovon Sharma</h3><h3 align='center'>Roll: 1907088</h3><b>Github: </b><a href="https://github.com/shovonSharma">https://github.com/shovonSharma</a></td>
       <td><h3 align='center'>Nakib Ahsan</h3><h3 align='center'>Roll: 1907086</h3><b>Github: </b><a href="https://github.com/ahsan07086">https://github.com/ahsan07086</a></td>
@@ -48,20 +44,6 @@ patient's status based on heart rate,systolic Pressure and diastolic pressure..
 
   
 
-## App Screenshot
-
-<table>
-  <tr>
-    <td><img src="https://github.com/shovonSharma/CardiacDoctor/blob/main/1.jpeg"></td>
-    <td><img src="https://github.com/shovonSharma/CardiacDoctor/blob/main/2.jpeg"></td>
-    <td><img src="https://github.com/shovonSharma/CardiacDoctor/blob/main/3.jpeg"></td>
-   </tr>
-   <tr>
-    <td><img src="https://github.com/shovonSharma/CardiacDoctor/blob/main/4.jpeg"></td>
-    <td><img src="https://github.com/shovonSharma/CardiacDoctor/blob/main/5.jpeg"></td>
-    <td><img src="https://github.com/shovonSharma/CardiacDoctor/blob/main/6.jpeg"></td>
-   </tr>
-</table>
 
 ## Contributing
 
